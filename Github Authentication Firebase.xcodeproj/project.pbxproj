@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B472EB761185386A2530AC /* Pods_Github_Authentication_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC5B34FD635CEE8948168E6 /* Pods_Github_Authentication_Firebase.framework */; };
 		6ECAD8631E55A4E2008678D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECAD8621E55A4E2008678D2 /* AppDelegate.swift */; };
 		6ECAD8651E55A4E2008678D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECAD8641E55A4E2008678D2 /* ViewController.swift */; };
 		6ECAD8681E55A4E2008678D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECAD8661E55A4E2008678D2 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BC5B34FD635CEE8948168E6 /* Pods_Github_Authentication_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Github_Authentication_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECAD85F1E55A4E2008678D2 /* Github Authentication Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Authentication Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECAD8621E55A4E2008678D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ECAD8641E55A4E2008678D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		6ECAD8691E55A4E2008678D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ECAD86C1E55A4E3008678D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ECAD86E1E55A4E3008678D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A042D6591B853DCEF8853AC /* Pods-Github Authentication Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github Authentication Firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Github Authentication Firebase/Pods-Github Authentication Firebase.release.xcconfig"; sourceTree = "<group>"; };
+		8F5B32AB506E38C32769436D /* Pods-Github Authentication Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github Authentication Firebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Github Authentication Firebase/Pods-Github Authentication Firebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B472EB761185386A2530AC /* Pods_Github_Authentication_Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F98D55BFEBB53DEBD4137BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5B34FD635CEE8948168E6 /* Pods_Github_Authentication_Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6ECAD8561E55A4E2008678D2 = {
 			isa = PBXGroup;
 			children = (
 				6ECAD8611E55A4E2008678D2 /* Github Authentication Firebase */,
 				6ECAD8601E55A4E2008678D2 /* Products */,
+				A8A83C2DBA1ADCED895E0811 /* Pods */,
+				0F98D55BFEBB53DEBD4137BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Github Authentication Firebase";
 			sourceTree = "<group>";
 		};
+		A8A83C2DBA1ADCED895E0811 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F5B32AB506E38C32769436D /* Pods-Github Authentication Firebase.debug.xcconfig */,
+				7A042D6591B853DCEF8853AC /* Pods-Github Authentication Firebase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ECAD8711E55A4E3008678D2 /* Build configuration list for PBXNativeTarget "Github Authentication Firebase" */;
 			buildPhases = (
+				0CD9353522A32D37EDC9F63E /* [CP] Check Pods Manifest.lock */,
 				6ECAD85B1E55A4E2008678D2 /* Sources */,
 				6ECAD85C1E55A4E2008678D2 /* Frameworks */,
 				6ECAD85D1E55A4E2008678D2 /* Resources */,
+				165E7F22DFC056F5A86EE1C3 /* [CP] Embed Pods Frameworks */,
+				A567F4E13CAE0FD7A193009C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CD9353522A32D37EDC9F63E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		165E7F22DFC056F5A86EE1C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Github Authentication Firebase/Pods-Github Authentication Firebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A567F4E13CAE0FD7A193009C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Github Authentication Firebase/Pods-Github Authentication Firebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6ECAD85B1E55A4E2008678D2 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		6ECAD8721E55A4E3008678D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5B32AB506E38C32769436D /* Pods-Github Authentication Firebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44VVQHZS45;
@@ -272,6 +348,7 @@
 		};
 		6ECAD8731E55A4E3008678D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A042D6591B853DCEF8853AC /* Pods-Github Authentication Firebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44VVQHZS45;
